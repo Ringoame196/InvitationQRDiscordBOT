@@ -1,20 +1,19 @@
-# DiscordBotKotlinTemplate
-Kotlinでコマンドを実行できるDiscordBotを開発ができるテンプレート
+# InvitationQRDiscordBOT
 
-## DiscordBot作成
- - [DiscordのDeveloper Portal](https://discord.com/developers/applications)でDiscordBot作成
 
-## コマンド
- - Mainファイル13行目に 「コマンド名、コマンド説明」を追加する
- - SlashCommandInteractionEventファイル9行目に 「コマンド名 -> 処理」を追加することで コマンド実行時の処理を実装できる
+https://github.com/user-attachments/assets/a72eb65e-48b0-4e74-9cf4-023eef4bc651
 
-## 開発
- - `bootBot` DiscordBOTを起動する
- - `build` jarファイルをビルドする
+
+## 概要
+招待QRコードをただただ生成するだけのDiscordBOT
 
 ## 使い方
- - java -jar (jarファイル名).jarで起動
- - 初期起動時に生成されるtoken.txtファイルに、DiscordBotのTokenを貼り付け
+- 初期起動時に生成されるtoken.txtにDiscordBOTのTokenを貼り付ける
+- java -jar InvitationQRDiscordBOT.jarで起動
+- /qrinvitationを実行 - 招待URLと招待QRを生成される 招待URLを生成できる権限を持っていると実行可能 <br>
+※ここで作成されるURLは、無期限URLです
 
-## コマンド権限
-鯖設定 -> 連携サービス -> BOT -> 設定したいコマンド -> 使用を許可する権限 チャンネルを設定
+## コマンド
+- testコマンド - BOTの起動確認ができるコマンド
+- stop - 鯖主のみ実行可能 BOTをシャットダウンできる
+- qrinvitation - 招待QRコードを生成できる
