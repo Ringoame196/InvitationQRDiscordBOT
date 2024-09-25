@@ -17,6 +17,9 @@ dependencies {
     implementation("com.fasterxml.jackson.core:jackson-core:2.15.0")
     implementation("com.fasterxml.jackson.core:jackson-annotations:2.15.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
+
+    implementation("com.google.zxing:core:3.4.1")
+    implementation("com.google.zxing:javase:3.4.1")
 }
 
 tasks.jar {
