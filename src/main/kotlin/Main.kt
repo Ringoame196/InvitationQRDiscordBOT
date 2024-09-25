@@ -12,10 +12,10 @@ fun main() {
     val activity = Activity.playing("KotlinBot")
     val commands = listOf(
         Commands.slash("test", "テストコマンド"),
-        Commands.slash("stop", "BOTを停止する")
-        // Commands.slash("コマンド名", "コマンド説明"),
+        Commands.slash("stop", "BOTを停止する"),
+        Commands.slash("qrinvitation", "招待URLをQRコードで発行")
     )
 
     val jda = discordManager.bootBot(token = token, activity = activity) ?: return
-    discordManager.addCommands(jda, commands)
+    discordManager.addCommands(jda, commands) // コマンド追加
 }
